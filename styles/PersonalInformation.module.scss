@@ -1,0 +1,45 @@
+@mixin inputs {
+    label {
+        color: white;
+        margin-right: 4px;
+    }
+
+    input {
+        height: 30px;
+        padding: 2px;
+        border: none;
+        font-size: 16px;
+        letter-spacing: 0.025em;
+        &:focus { 
+            outline: none;
+            border: 2px solid rgb(14, 137, 199);
+        }
+        border-radius: 6px;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 75%;
+    border: solid black 2px;
+    height: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.firstName {
+    @include inputs;
+
+    
+}
+
+.lastName {
+    @include inputs;
+}

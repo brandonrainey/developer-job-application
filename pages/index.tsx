@@ -3,9 +3,13 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.scss'
 import Header from '@/components/Header'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
+import ProgressBar from '@/components/ProgressBar'
 
 export default function Home() {
 const router = useRouter()
+
+
 
   return (
     <>
@@ -17,6 +21,7 @@ const router = useRouter()
       </Head>
       <main className={styles.main}>
         <Header />
+        <ProgressBar />
         <article>
           <p>Description of position</p>
         </article>
@@ -30,4 +35,7 @@ const router = useRouter()
 //where did you hear
 //work in us
 //date calendar
-//
+//upload resume
+//age, citizen, race, disability, gender
+
+//captcha

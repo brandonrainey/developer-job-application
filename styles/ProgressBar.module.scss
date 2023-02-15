@@ -1,0 +1,25 @@
+.container {
+    width: 500px;
+    height: 40px;
+    background-color: aqua;
+    display: flex;
+    border-radius: 15px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    * {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+
+        &:nth-child(2) {
+        border-right: solid black 2px;
+        border-left: solid black 2px;  
+        }
+    }
+
+    
+}
+
