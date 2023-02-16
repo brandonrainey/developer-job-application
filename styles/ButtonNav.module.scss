@@ -1,0 +1,16 @@
+.buttonNav {
+    display: flex;
+    gap: 10px;
+
+    button {
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        font-size: 20px;
+
+        &:hover {
+            background-color: #10153a;
+            color: white;
+        }
+    }
+}

@@ -36,10 +36,32 @@
 
 .firstName {
     @include inputs;
-
-    
 }
 
 .lastName {
     @include inputs;
+}
+
+.label {
+    background: rgb(42, 24, 107);
+    color: white;
+    padding: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input {
+    width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.uploadContainer {
+    p {
+        color: white;
+    }
 }

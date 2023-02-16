@@ -5,12 +5,17 @@ import Header from '@/components/Header'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import ProgressBar from '@/components/ProgressBar'
+import { useAppContext } from '@/context/progressContext'
 
 export default function Home() {
 const router = useRouter()
 
+const {progress, setProgress} = useAppContext()
 
-
+function handleStart() {
+  router.push('/personal-information')
+  setProgress(1)
+}
   return (
     <>
       <Head>
@@ -25,7 +30,7 @@ const router = useRouter()
         <article>
           <p>Description of position</p>
         </article>
-        <button onClick={() => router.push('/personal-information')}>Start</button>
+        <button onClick={handleStart}>Start</button>
       </main>
     </>
   )

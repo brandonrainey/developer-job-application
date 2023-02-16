@@ -1,6 +1,11 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import { AppWrapper } from '@/context/progressContext'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <AppWrapper>
+      <Component {...pageProps} />
+    </AppWrapper>
+  )
 }
