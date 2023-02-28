@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 import ProgressBar from '@/components/ProgressBar'
 import { useAppContext } from '@/context/progressContext'
+import PersonalInformation from '@/components/PersonalInformation'
 
 export default function Home() {
 const router = useRouter()
@@ -26,10 +27,10 @@ function handleStart() {
       </Head>
       <main className={styles.main}>
         <Header />
-        <ProgressBar />
         <article>
           <p>Description of position</p>
         </article>
+        <PersonalInformation />
         <button onClick={handleStart}>Start</button>
       </main>
     </>
@@ -39,8 +40,15 @@ function handleStart() {
 //salary
 //where did you hear
 //work in us
+//age, citizen
 //date calendar
-//upload resume
-//age, citizen, race, disability, gender
 
+
+
+
+//, race, , gender
+//disability, veteran,
+
+
+//linkedin, github, skills
 //captcha
