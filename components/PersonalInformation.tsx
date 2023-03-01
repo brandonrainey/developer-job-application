@@ -9,6 +9,7 @@ export default function personalInformation() {
   const [resumeName, setResumeName] = useState('')
 
   function handleChange(e: any) {
+    console.log(e)
     setResumeName(e.target.files[0].name)
   }
 
@@ -43,11 +44,12 @@ export default function personalInformation() {
             className={styles.input}
             onChange={handleChange}
             accept=".pdf"
+            data-testid='resume input'
           />
           <label htmlFor="file" className={styles.label}>
             Upload Resume
           </label>
-          <p>{resumeName}</p>
+          <p data-testid='resume name'>{resumeName}</p>
         </form>
       </div>
 
